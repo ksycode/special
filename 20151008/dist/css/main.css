@@ -114,6 +114,9 @@
   .z-floor-u li h5 {
     font-size: 15px;
     line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     transition: all 1s; }
   .z-floor-u li p {
     font-size: 21px;
