@@ -160,7 +160,7 @@
                <div class="z-floor-1 z-floor-all" id="z-floor-1">
                  <div class="z-floor-title"></div>
                  <div class="z-floor-pro">
-                   <ul class="z-floor-u clearfix">
+                   <ul class="z-floor-u clear clearfix">
                      <li>
                        <a href="" title="title" target="_blank">
                          <div class="thumb-box"><img src="./images/products/2.jpg" alt=""></div>
@@ -184,7 +184,7 @@
                <div class="z-floor-2 z-floor-all" id="z-floor-2">
                  <div class="z-floor-title"></div>
                  <div class="z-floor-pro">
-                   <ul class="z-floor-u clearfix">
+                   <ul class="z-floor-u clear clearfix">
                      <li>
                        <a href="" title="title" target="_blank">
                          <div class="thumb-box"><img src="./images/products/2.jpg" alt=""></div>
@@ -208,7 +208,7 @@
                <div class="z-floor-3 z-floor-all" id="z-floor-3">
                  <div class="z-floor-title"></div>
                  <div class="z-floor-pro">
-                   <ul class="z-floor-u clearfix">
+                   <ul class="z-floor-u clear clearfix">
                      <li>
                        <a href="" title="title" target="_blank">
                          <div class="thumb-box"><img src="./images/products/2.jpg" alt=""></div>
@@ -232,7 +232,7 @@
                <div class="z-floor-4 z-floor-all" id="z-floor-4">
                  <div class="z-floor-title"></div>
                  <div class="z-floor-pro">
-                   <ul class="z-floor-u clearfix">
+                   <ul class="z-floor-u clear clearfix">
                      <li>
                        <a href="" title="title" target="_blank">
                          <div class="thumb-box"><img src="./images/products/2.jpg" alt=""></div>
@@ -256,7 +256,7 @@
                <div class="z-floor-5 z-floor-all" id="z-floor-5">
                  <div class="z-floor-title"></div>
                  <div class="z-floor-pro">
-                   <ul class="z-floor-u clearfix">
+                   <ul class="z-floor-u clear clearfix">
                      <li>
                        <a href="" title="title" target="_blank">
                          <div class="thumb-box"><img src="./images/products/2.jpg" alt=""></div>
@@ -280,7 +280,7 @@
                <div class="z-floor-6 z-floor-all" id="z-floor-6">
                  <div class="z-floor-title"></div>
                  <div class="z-floor-pro">
-                   <ul class="z-floor-u clearfix">
+                   <ul class="z-floor-u clear clearfix">
                      <li>
                        <a href="" title="title" target="_blank">
                          <div class="thumb-box"><img src="./images/products/2.jpg" alt=""></div>
@@ -306,13 +306,45 @@
     </div>
     <!-- floor end -->
     <!-- rule -->
-    <div class="z-rule">
-      <img src="./images/rule.png" alt="">
+    <div class="z-rule" id="z-floor-7">
+      <div class="z-rule-main z-w">
+        <div class="z-rule-title"></div>
+        <div class="z-rule-count">
+          <ol>
+            <li>
+              活动期间内,购买活动页面的商品不可少于4件，实付金额最低的商品既能获得免单，每位Panli会员限免一件。
+            </li>
+            <li>
+              活动期间若有退货，将不计算入活动商品件数。少于四件将不能获得免单。
+            </li>
+            <li>
+              活动结束后2个工作日内统一返款到对应的Panli账户中,请注意查收。若未收到也可联系客服咨询。
+            </li>
+          </ol>
+        </div>
+        <div class="z-rule-footer">
+          *本活动最终解释权归Panli所有
+        </div>
+      </div>
+
     </div>
     <!-- rule end -->
   </div>
+  <div class="z-floor-nav">
+    <div class="floor-nav-top"></div>
+    <ul class="floor-nav-u">
+      <li id="nav-z-floor-1"><a href="#z-floor-1">服装</a></li>
+      <li id="nav-z-floor-2"><a href="#z-floor-2">鞋包</a></li>
+      <li id="nav-z-floor-3"><a href="#z-floor-3">美容</a></li>
+      <li id="nav-z-floor-4"><a href="#z-floor-4">配饰</a></li>
+      <li id="nav-z-floor-5"><a href="#z-floor-5">居家</a></li>
+      <li id="nav-z-floor-6"><a href="#z-floor-6">食品</a></li>
+      <li id="nav-z-floor-7"><a href="#z-floor-7">活动规则</a></li>
+      <li><a href="#frame">TOP</a></li>
+    </ul>
+    <div class="floor-nav-b"></div>
+  </div>
   <!-- onlone -->
-
   <style type="text/css">
        .rightMenu { width:70px; text-align:right;position: fixed; _position:absolute;display:block; z-index:799;left:0;}
        .rightMenu .as{background:url(http://sf.panli.com/FrontEnd/images20090801/newindex/topscr.gif) no-repeat;text-decoration:none;text-align:center;display:block; }
@@ -328,6 +360,26 @@
         <a class="as kefu" href="http://www.panli.com/CustomerService" target="_blank">&nbsp;</a>
     </div>
   </div>
+  <script>
+  $(function(){
+     $(window).scroll(function(){
+        var wst =  $(window).scrollTop()
+         for (i=1; i<8; i++){
+           console.log($("#z-floor-"+i).height());
+           console.log(wst);
+            if($("#z-floor-"+i).offset().top<=wst+$("#z-floor-"+i).height()){
+             $('.floor-nav-u li').removeClass("on");
+             $("#nav-z-floor-"+i).addClass("on");
+          }
+      }
+    });
+
+    $('.floor-nav-u li').click(function(){
+      $('.floor-nav-u li').removeClass("on");
+      $(this).addClass("on");
+    });
+});
+  </script>
 </div>
 <!-- frame end -->
 

@@ -1,6 +1,6 @@
 .z-floor-wrap{
   position: relative;
-  z-index: 1
+  z-index: 1;
 }
 .z-floor-top{
   height: 154px;
@@ -9,6 +9,8 @@
   left: 0;
   right: 0;
   background: url(./images/floor-top.png) no-repeat center;
+  transition:all 1s;
+  animation: animatedBackground 16s linear infinite;
 }
 .z-floor-body{
   min-height: 600px;
@@ -32,9 +34,10 @@
   li{
     position: relative;
     margin-left: 24px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     width: (960px/4-30);
     float: left;
+    overflow: hidden;
     a{
       text-decoration: none;
       color: #FFF;
@@ -88,7 +91,7 @@
       transition:all 1s;
       position: absolute;
       right: 4px;
-      bottom: 4px;
+      bottom: 24px;
       width: 29px;
       height: 31px;
       background: url(./images/icon/cart.png) no-repeat;
@@ -102,7 +105,6 @@
   position: relative;
   padding-top: 0px;
   .z-floor-title{
-
     height: 80px;
     background-image: url(./images/floor/floor-title-1.png);
   }

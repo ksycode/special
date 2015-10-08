@@ -7,7 +7,7 @@ $colorbg:#feb5cc;
 
 .clear{
   clear:both;
-  height:0px;
+  
   overflow:hidden;
 }
 
@@ -15,7 +15,10 @@ $colorbg:#feb5cc;
   width: 960px;
   margin: 0 auto;
 }
-
+#frame{
+  font-family: 'Microsoft YaHei';
+}
 @import "head";
 @import "floor";
+@import "nav";
 @import "rule";
