@@ -1,31 +1,8 @@
-.pan-header{
-  position: relative;
-  min-height: 65px;
-  padding: 15px 0;
-  .top_prompt,.top_help{
-    text-align: right;
-    padding-right: 10px;
+.z-head{
+  height: 703px;
+  background: #ff79ab url(./images/topbg.jpg) no-repeat center bottom;
+  .z-ban{
+    height: 552px;
+    background: url(./images/banner.png) no-repeat center 40px;
   }
-  .top_prompt{
-    font-size: 10px;
-    color: #bbbbbb;
-    margin-top: 10px;
-    height: 13px;
-    a:hover{color:#8c8c8c;text-decoration:none;}
-  }
-  .top_help{
-    height: 15px;
-    font-size: 12px;
-    margin-top: 20px;
-    a{
-      color: #79797b;
-      text-decoration: none;
-      padding: 0 5px;
-      &:hover{color:#8c8c8c;text-decoration:underline;}
-    }
-  }
-}
-.pan_logo{
-  position: absolute;
-  padding-left: 10px;
 }
