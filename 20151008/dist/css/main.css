@@ -106,11 +106,13 @@
       width: 210px;
       height: 210px;
       margin-bottom: 5px;
-      overflow: hidden; }
+      overflow: hidden;
+      cursor: pointer; }
     .z-floor-u li a img {
       transition: all 1s;
       max-width: 100%;
-      display: block; }
+      display: block;
+      cursor: pointer; }
   .z-floor-u li h5 {
     font-size: 15px;
     line-height: 30px;
@@ -131,7 +133,8 @@
     bottom: 24px;
     width: 29px;
     height: 31px;
-    background: url(./images/icon/cart.png) no-repeat; }
+    background: url(./images/icon/cart.png) no-repeat;
+    cursor: pointer; }
 
 .z-floor-all {
   padding-top: 80px; }
