@@ -24,7 +24,7 @@
 
 .z-head {
   height: 703px;
-  background: #ff79ab url(./images/topbg.jpg) no-repeat center bottom;
+  background: #ff79ab url(./images/topbg-80.jpg) no-repeat center bottom;
   transition: all 3s;
   -webkit-animation: animatedBackground 20s linear infinite;
           animation: animatedBackground 20s linear infinite; }
