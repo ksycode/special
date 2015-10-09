@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .clearfix:after {
   content: ".";
   display: block;
@@ -19,32 +20,37 @@
   width: 960px;
   margin: 0 auto; }
 
-#frame {
-  font-family: 'Microsoft YaHei'; }
+#frame, .z-floor-nav {
+  font: 14px / 1.42857 "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400; }
+  #frame h5, .z-floor-nav h5 {
+    font-weight: 400; }
+  #frame p, .z-floor-nav p {
+    font-weight: 400; }
 
 .z-head {
   height: 703px;
-  background: #ff79ab url(./images/topbg-80.jpg) no-repeat center bottom;
+  background: #ff79ab url(./images/topbg-80.jpg) repeat-x center bottom;
   transition: all 3s;
-  -webkit-animation: animatedBackground 20s linear infinite;
-          animation: animatedBackground 20s linear infinite; }
+  -webkit-animation: animatedBackground 10s linear infinite;
+          animation: animatedBackground 10s linear infinite; }
   .z-head .z-ban {
     height: 552px;
     background: url(./images/banner.png) no-repeat center 40px; }
 
 @-webkit-keyframes animatedBackground {
-  10% {
+  0% {
     background-position: 0 bottom; }
   50% {
-    background-position: 100% bottom; }
+    background-position: 30px bottom; }
   100% {
     background-position: 0 bottom; } }
 
 @keyframes animatedBackground {
-  10% {
+  0% {
     background-position: 0 bottom; }
   50% {
-    background-position: 100% bottom; }
+    background-position: 30px bottom; }
   100% {
     background-position: 0 bottom; } }
 
@@ -58,10 +64,8 @@
   top: -150px;
   left: 0;
   right: 0;
-  background: url(./images/floor-top.png) no-repeat center;
-  transition: all 1s;
-  -webkit-animation: animatedBackground 16s linear infinite;
-          animation: animatedBackground 16s linear infinite; }
+  background: url(./images/floor-top.png) no-repeat center bottom;
+  transition: all 1s; }
 
 .z-floor-body {
   min-height: 600px;
@@ -94,14 +98,11 @@
     .z-floor-u li a:hover img {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
-    .z-floor-u li a:hover h5 {
-      color: #f1ebe5;
-      text-shadow: 0 8px 9px #e85869, -3px 3px 3px rgba(250, 120, 120, 0.75); }
     .z-floor-u li a:hover h5, .z-floor-u li a:hover p {
-      color: #da2843; }
+      color: #f0ff47; }
     .z-floor-u li a:hover .z-cart {
-      -webkit-transform: translate(0, -66px);
-              transform: translate(0, -66px); }
+      -webkit-transform: translate(-2px, 0);
+              transform: translate(-2px, 0); }
     .z-floor-u li a .thumb-box {
       width: 210px;
       height: 210px;
@@ -123,9 +124,11 @@
   .z-floor-u li p {
     font-size: 21px;
     line-height: 26px;
-    transition: all 1s; }
+    transition: all 1s;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     .z-floor-u li p small {
-      font-size: 16px; }
+      font-size: 16px;
+      font-family: "Microsoft YaHei","微软雅黑"; }
   .z-floor-u li .z-cart {
     transition: all 1s;
     position: absolute;
@@ -176,6 +179,18 @@
   _position: absolute;
   _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight);
   overflow: visible; }
+  @media screen and (min-width: 1500px) {
+    .z-floor-nav {
+      right: 130px; } }
+  @media screen and (min-width: 1600px) {
+    .z-floor-nav {
+      right: 180px; } }
+  @media screen and (min-width: 1700px) {
+    .z-floor-nav {
+      right: 230px; } }
+  @media screen and (min-width: 1800px) {
+    .z-floor-nav {
+      right: 280px; } }
   .z-floor-nav .floor-nav-top {
     height: 48px;
     background: url(./images/nav-top-top.png) no-repeat; }
@@ -198,25 +213,20 @@
       text-decoration: none;
       padding: 5px;
       position: relative;
-      z-index: 2px; }
-      .z-floor-nav .floor-nav-u a::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 0px;
-        background-color: rgba(237, 83, 129, 0.49);
-        transition: all 1s;
-        z-index: 0; }
+      z-index: 2px;
+      transition: all 1s; }
     .z-floor-nav .floor-nav-u li {
       display: block;
       text-align: center;
       margin-bottom: 2px; }
-      .z-floor-nav .floor-nav-u li.on a::before {
-        width: 100%; }
-      .z-floor-nav .floor-nav-u li:hover a::before {
-        width: 100%; }
+      .z-floor-nav .floor-nav-u li.on a {
+        color: #f0ff47; }
+      .z-floor-nav .floor-nav-u li:hover a {
+        color: #f0ff47; }
+
+@media screen and (max-width: 960px) {
+  body {
+    background: #000; } }
 
 .z-rule {
   padding: 50px 0;

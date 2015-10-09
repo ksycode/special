@@ -8,9 +8,10 @@
   top: -150px;
   left: 0;
   right: 0;
-  background: url(./images/floor-top.png) no-repeat center;
+  background: url(./images/floor-top.png) no-repeat center bottom;
+
   transition:all 1s;
-  animation: animatedBackground 16s linear infinite;
+  //animation: animatedBackground 20s linear infinite;
 }
 .z-floor-body{
   min-height: 600px;
@@ -19,7 +20,6 @@
 }
 .z-floor-main{
   position: relative;
-
 }
 .z-floor-pro{
   background: #ed3b5c;
@@ -46,20 +46,11 @@
         img{
           transform:scale(1.2);
         }
-        h5{
-          color: #f1ebe5;
-          text-shadow: 0 8px 9px #e85869, -3px 3px 3px rgba(250, 120, 120, 0.75);
-          // font-weight: bold;
-          // letter-spacing: 4px;
-          // background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
-          // transform: translate(-50%,-50%);
-          // border-radius: 20px;
-        }
         h5,p{
-          color: rgb(218, 40, 67)
+          color: #f0ff47;
         }
         .z-cart{
-          transform:translate(0, -66px);
+          transform:translate(-2px, 0);
         }
       }
       .thumb-box{
@@ -88,8 +79,10 @@
       font-size: 21px;
       line-height: 26px;
       transition:all 1s;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       small{
         font-size: 16px;
+        font-family: "Microsoft YaHei","微软雅黑";
       }
     }
     .z-cart{
