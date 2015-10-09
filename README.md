@@ -10,7 +10,7 @@ dist 生产环境
 
 ## Demo
 
-![demo](http://panli-com.github.io/special)
+[demo](http://panli-com.github.io/special)
 
 
 专题页目录结构如下
