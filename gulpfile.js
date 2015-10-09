@@ -13,6 +13,7 @@ var sass = require('gulp-sass'),
     notify = require('gulp-notify'),
     autoprefixer = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload'),
+    zip = require('gulp-zip');
     port = process.env.port || 5000;
 
 
@@ -50,14 +51,25 @@ gulp.task('html',function(){
 gulp.task('scripts',function(){
     return gulp.src('./'+ day +'/src/js/pan.js')
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('./'+ day +'/dist/js'))
+        .pipe(gulp.dest('./'+ day +'/images/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('./'+ day +'/dist/js/'))
+        .pipe(gulp.dest('./'+ day +'/images/js/'))
         .pipe( connect.reload() )
         .pipe(notify({ message: 'Scripts task complete' }));
 
 });
+
+
+//zip
+gulp.task('zip', function () {
+    return gulp.src(['./'+ day +'/main.min.css','./'+ day +'/index.html'])
+        .pipe(zip('special'+ day +'.zip'))
+        .pipe(gulp.dest(''+ day +''))
+        .pipe(notify({ message: 'zip task complete' }));
+});
+
+
 
 /* 监听 文件变化  */
 
@@ -67,10 +79,11 @@ gulp.task('watch', function() {
     gulp.watch('./'+ day +'/src/scss/*.scss', ['sass']);
 
     // 看守所有.js档
-    gulp.watch('./'+ day +'/src/js/*.js', ['scripts']);
+    gulp.watch('./'+ day +'/*.js', ['scripts']);
+    gulp.watch('./'+ day +'/src/js/*.js', ['html']);
 
     // 看守所有.html
-    gulp.watch('./'+ day +'/*.html',['html']);
+    gulp.watch('./'+ day +'/*.html',['html','zip']);
 
 });
 
