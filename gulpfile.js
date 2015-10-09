@@ -63,7 +63,7 @@ gulp.task('scripts',function(){
 
 //zip
 gulp.task('zip', function () {
-    return gulp.src(['./'+ day +'/main.min.css','./'+ day +'/index.html'])
+    return gulp.src(['./'+ day +'/main.min.css','./'+ day +'/host.html'])
         .pipe(zip('special'+ day +'.zip'))
         .pipe(gulp.dest(''+ day +''))
         .pipe(notify({ message: 'zip task complete' }));
