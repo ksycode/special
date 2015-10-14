@@ -1,13 +1,9 @@
 .z-head{
-  height: 703px;
-  background: #ff79ab url(./images/topbg-80.jpg) repeat-x center bottom;
+  height: 618px;
+  background: #dd2642 url(./images/banner/banner-all-32.png) repeat-x center bottom;
   transition:all 3s;
-  animation: animatedBackground 10s linear infinite;
-  .z-ban{
-    height: 552px;
-    background: url(./images/banner.png) no-repeat center 40px;
+  // animation: animatedBackground 10s linear infinite;
 
-  }
 }
 
 @keyframes animatedBackground {

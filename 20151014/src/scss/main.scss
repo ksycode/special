@@ -12,7 +12,7 @@ $colorbg:#feb5cc;
 }
 
 .z-w{
-  width: 960px;
+  width: 1000px;
   margin: 0 auto;
 }
 #frame,.z-floor-nav{
@@ -28,5 +28,5 @@ $colorbg:#feb5cc;
 
 @import "head";
 @import "floor";
-@import "nav";
+@import "my";
 @import "rule";
