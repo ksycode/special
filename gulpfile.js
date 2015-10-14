@@ -49,12 +49,12 @@ gulp.task('html',function(){
 });
 
 gulp.task('scripts',function(){
-    return gulp.src('./'+ day +'/src/js/pan.js')
+    return gulp.src('./'+ day +'/src/js/*.js')
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('./'+ day +'/images/js'))
+        .pipe(gulp.dest('./'+ day +'/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('./'+ day +'/images/js/'))
+        .pipe(gulp.dest('./'+ day +'/js/'))
         .pipe( connect.reload() )
         .pipe(notify({ message: 'Scripts task complete' }));
 
@@ -80,7 +80,7 @@ gulp.task('watch', function() {
 
     // 看守所有.js档
     gulp.watch('./'+ day +'/*.js', ['scripts']);
-    gulp.watch('./'+ day +'/src/js/*.js', ['html']);
+    gulp.watch('./'+ day +'/src/js/*.js', ['html','scripts']);
 
     // 看守所有.html
     gulp.watch('./'+ day +'/*.html',['html','zip']);

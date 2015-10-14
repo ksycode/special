@@ -1,9 +1,9 @@
 .z-head{
   height: 618px;
   background: #dd2642 url(./images/banner/banner-all-32.png) repeat-x center bottom;
-  transition:all 3s;
-  // animation: animatedBackground 10s linear infinite;
 
+  // animation: animatedBackground 10s linear infinite;
+  overflow: hidden;
 }
 
 @keyframes animatedBackground {

@@ -47,6 +47,22 @@
       bottom: 10px;
       background: url(./images/my-hb-info-bg.png) no-repeat;
     }
+    a:hover{
+      text-decoration: none;
+    }
+    .login-btn{
+      display: inline-block;
+      padding: 5px 20px;
+      text-decoration: none;
+      background: #f73753;
+      color: #FFF;
+      border-bottom: 5px solid #e22541;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      &:hover{
+        background: #d1263f;
+      }
+    }
   }
 
   .hb-show{
