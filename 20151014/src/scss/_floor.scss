@@ -69,6 +69,10 @@
     padding: 20px;
     padding-top: 60px;
   }
+  .z-list-hide{
+    height: 120px;
+    overflow: hidden;
+  }
   .new-hb-info-u {
     position: relative;
     li{
@@ -98,7 +102,7 @@
     position: absolute;
     width: 220px;
     height: 55px;
-    left: 50%;   
+    left: 50%;
   }
   .wall-2,.wall-3,.wall-4{
     position: absolute;

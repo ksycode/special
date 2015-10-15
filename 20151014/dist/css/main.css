@@ -115,6 +115,9 @@
     border-radius: 8px;
     padding: 20px;
     padding-top: 60px; }
+  .floor-3 .z-list-hide {
+    height: 120px;
+    overflow: hidden; }
   .floor-3 .new-hb-info-u {
     position: relative; }
     .floor-3 .new-hb-info-u li {
