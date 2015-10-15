@@ -362,7 +362,7 @@ body {
   background-color: #dd2642; }
 
 .app {
-  padding-bottom: 1.6rem;
+  padding-bottom: .5rem;
   min-width: 320px;
   max-width: 640px;
   margin: 0 auto;
