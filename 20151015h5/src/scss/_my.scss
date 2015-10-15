@@ -37,6 +37,14 @@
       background: url(./images/hello-bg.png) no-repeat center center;
       background-size: contain;
     }
+    .login-btn{
+      display: inline-block;
+      padding: 4px 10px;
+      background: #e35466;
+      color: #FFF;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
     h6{
       line-height: 26px;
       font-weight: 500;
