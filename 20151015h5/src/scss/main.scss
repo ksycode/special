@@ -6,12 +6,21 @@ $colorbg:#dd2642;
   clear:both;
   visibility:hidden;
 }
-h6,p{
+ul,li,h6,p{
   padding: 0;
   margin: 0;
 }
+ul,li{
+  list-style: none;
+}
+
 .m-at{
   margin:0 auto;
+}
+.no-wrap{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .clearfix{
   display:inline-block;

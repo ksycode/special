@@ -108,24 +108,27 @@
     margin-left: -176px;
     width: 352px;
     height: 58px;
-    background: #1ae3d3 url(./images/new-hb-title.png) no-repeat center center; }
+    background: #1ae3d3 url(./images/new-hb-title.png) no-repeat center center;
+    z-index: 10; }
   .floor-3 .z-list {
     min-height: 80px;
     border: 4px solid #1CC3B6;
     border-radius: 8px;
     padding: 20px;
-    padding-top: 60px; }
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+    z-index: 8; }
   .floor-3 .z-list-hide {
     height: 120px;
-    overflow: hidden; }
-  .floor-3 .new-hb-info-u {
+    overflow: hidden;
     position: relative; }
-    .floor-3 .new-hb-info-u li {
-      float: left;
-      width: 50%;
-      padding: 10px 0; }
-      .floor-3 .new-hb-info-u li span {
-        padding-left: 40px; }
+  .floor-3 .new-hb-info-u li {
+    float: left;
+    width: 50%;
+    padding: 10px 0; }
+    .floor-3 .new-hb-info-u li span {
+      padding-left: 40px; }
 
 .btn-hover-sc {
   -webkit-transform: scale(0.9);
