@@ -1,0 +1,47 @@
+.my-hb-wrap{
+  min-height: 300px;
+  .red{
+    color: #f73753;
+  }
+}
+
+.my-hb-main{
+  padding-top: 1rem;
+  .my-hb-title{
+    height: 1rem;
+    background: url(./images/my-hb-title.png) no-repeat center center;
+    background-size: contain;
+    margin-bottom: 1rem;
+  }
+  .hb-yello{
+    min-height: 2rem;
+    background-color: #ffd34b;
+    padding: 0.7rem 0.6rem;
+  }
+  .hellp-wrap{
+    background: #FFF;
+    padding: 0.2rem;
+  }
+  .hellp-border{
+    border: 0.08rem solid #ffecd3;
+    min-height: 1rem;
+    padding: 0.2rem;
+    position: relative;
+    .hello-bg{
+      position: absolute;
+      width: 2rem;
+      height: 1rem;
+      bottom: 2px;
+      right: 5px;
+      background: url(./images/hello-bg.png) no-repeat center center;
+      background-size: contain;
+    }
+    h6{
+      line-height: 26px;
+      font-weight: 500;
+    }
+    p{
+      text-indent: 24px;
+    }
+  }
+}
