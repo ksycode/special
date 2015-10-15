@@ -429,7 +429,10 @@ body {
 
 .floor-wrap {
   background-color: #1ae3d3;
-  min-height: 10rem; }
+  min-height: 10rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -2rem; }
   .floor-wrap img {
     max-width: 100%; }
 
