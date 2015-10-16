@@ -1,12 +1,29 @@
 .floor-wrap{
   background-color: #ffea00;
   min-height: 800px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .floor-main{
+  position: relative;
+  padding-top: 700px;
   .floor-title{
+    margin-bottom: 26px;
     background-repeat: no-repeat;
     background-position: center center;
+    position: relative;
+    background-size: contain;
+    .z-more{
+      display: block;
+      width: 86px;
+      height: 15px;
+      background: url(./images/more.png) no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 2px;
+    }
   }
   img{
     padding: 0;
@@ -45,6 +62,10 @@
       }
     }
   }
+  .z-pro-r{
+    right: 0;
+
+  }
   .pro-list-u{
     width: (204px*3);
     li{
@@ -67,14 +88,59 @@
       }
     }
   }
+  .pro-list-u-lf{
+    li{
+      margin-left: 0;
+      margin-right: 8px;
+    }
+  }
+  .z-lace{
+    height: 23px;
+    background: url(./images/lace.png) no-repeat center center;
+    background-size: contain;
+    margin-bottom: 30px;
+  }
 }
 
 .z-pro-wrap{
   position: relative;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+.floor-1,.floor-2{
+  padding-top: 10px;
 }
 .floor-1{
+  position: absolute;
+  top: 50px;
+  left: -166px;
+  right: 0;
   .floor-title{
     height: 48px;
     background-image: url(./images/floor-1-title.png);
+  }
+}
+.floor-2{
+  .floor-title{
+    height: 58px;
+    background-image: url(./images/floor-2-title.png);
+  }
+}
+.floor-3{
+  .floor-title{
+    height: 63px;
+    background-image: url(./images/floor-3-title.png);
+  }
+}
+.floor-4{
+  .floor-title{
+    height: 46px;
+    background-image: url(./images/floor-4-title.png);
+  }
+}
+.floor-5{
+  .floor-title{
+    height: 55px;
+    background-image: url(./images/floor-5-title.png);
   }
 }

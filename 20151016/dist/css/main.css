@@ -113,68 +113,115 @@
 
 .floor-wrap {
   background-color: #ffea00;
-  min-height: 800px; }
+  min-height: 800px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 2; }
 
-.floor-main .floor-title {
-  background-repeat: no-repeat;
-  background-position: center center; }
-
-.floor-main img {
-  padding: 0;
-  margin: 0; }
-
-.floor-main .z-thumb {
-  overflow: hidden; }
-  .floor-main .z-thumb img {
-    max-width: 100%; }
-
-.floor-main .z-desc {
-  background-color: #85543b;
-  color: #FFF; }
-
-.floor-main a {
-  text-decoration: none; }
-  .floor-main a:hover {
+.floor-main {
+  position: relative;
+  padding-top: 700px; }
+  .floor-main .floor-title {
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: contain; }
+    .floor-main .floor-title .z-more {
+      display: block;
+      width: 86px;
+      height: 15px;
+      background: url(./images/more.png) no-repeat;
+      position: absolute;
+      right: 0px;
+      bottom: 2px; }
+  .floor-main img {
+    padding: 0;
+    margin: 0; }
+  .floor-main .z-thumb {
+    overflow: hidden; }
+    .floor-main .z-thumb img {
+      max-width: 100%; }
+  .floor-main .z-desc {
+    background-color: #85543b;
+    color: #FFF; }
+  .floor-main a {
     text-decoration: none; }
-
-.floor-main .z-pro-first {
-  width: 346px;
-  position: absolute; }
-  .floor-main .z-pro-first .z-thumb {
+    .floor-main a:hover {
+      text-decoration: none; }
+  .floor-main .z-pro-first {
     width: 346px;
-    height: 414px; }
-  .floor-main .z-pro-first .z-desc {
-    height: 90px;
-    font-size: 26px;
-    line-height: 36px;
-    text-indent: 30px; }
-    .floor-main .z-pro-first .z-desc p {
-      padding-top: 5px; }
-
-.floor-main .pro-list-u {
-  width: 612px; }
-  .floor-main .pro-list-u li {
-    float: left;
-    width: 196px;
-    margin-left: 8px;
-    margin-bottom: 10px; }
-  .floor-main .pro-list-u .z-thumb {
-    width: 196px;
-    height: 196px; }
-  .floor-main .pro-list-u .z-desc {
-    height: 51px;
-    font-size: 14px;
-    line-height: 20px;
-    text-indent: 10px; }
-    .floor-main .pro-list-u .z-desc p {
-      padding-top: 5px; }
+    position: absolute; }
+    .floor-main .z-pro-first .z-thumb {
+      width: 346px;
+      height: 414px; }
+    .floor-main .z-pro-first .z-desc {
+      height: 90px;
+      font-size: 26px;
+      line-height: 36px;
+      text-indent: 30px; }
+      .floor-main .z-pro-first .z-desc p {
+        padding-top: 5px; }
+  .floor-main .z-pro-r {
+    right: 0; }
+  .floor-main .pro-list-u {
+    width: 612px; }
+    .floor-main .pro-list-u li {
+      float: left;
+      width: 196px;
+      margin-left: 8px;
+      margin-bottom: 10px; }
+    .floor-main .pro-list-u .z-thumb {
+      width: 196px;
+      height: 196px; }
+    .floor-main .pro-list-u .z-desc {
+      height: 51px;
+      font-size: 14px;
+      line-height: 20px;
+      text-indent: 10px; }
+      .floor-main .pro-list-u .z-desc p {
+        padding-top: 5px; }
+  .floor-main .pro-list-u-lf li {
+    margin-left: 0;
+    margin-right: 8px; }
+  .floor-main .z-lace {
+    height: 23px;
+    background: url(./images/lace.png) no-repeat center center;
+    background-size: contain;
+    margin-bottom: 30px; }
 
 .z-pro-wrap {
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 2; }
 
-.floor-1 .floor-title {
-  height: 48px;
-  background-image: url(./images/floor-1-title.png); }
+.floor-1, .floor-2 {
+  padding-top: 10px; }
+
+.floor-1 {
+  position: absolute;
+  top: 50px;
+  left: -166px;
+  right: 0; }
+  .floor-1 .floor-title {
+    height: 48px;
+    background-image: url(./images/floor-1-title.png); }
+
+.floor-2 .floor-title {
+  height: 58px;
+  background-image: url(./images/floor-2-title.png); }
+
+.floor-3 .floor-title {
+  height: 63px;
+  background-image: url(./images/floor-3-title.png); }
+
+.floor-4 .floor-title {
+  height: 46px;
+  background-image: url(./images/floor-4-title.png); }
+
+.floor-5 .floor-title {
+  height: 55px;
+  background-image: url(./images/floor-5-title.png); }
 
 @-webkit-keyframes animatedBackground {
   0% {
