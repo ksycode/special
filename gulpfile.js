@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var day = '20151015h5';
+var day = '20151016';
 
 // 引入组件
 var sass = require('gulp-sass'),
@@ -43,8 +43,27 @@ gulp.task('sass', function() {
 
 });
 
+
+gulp.task('home', function() {
+    return gulp.src('./home/scss/main.scss')
+        .pipe(sass({ style: 'expanded' }))
+        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(gulp.dest('./home/css'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(minifycss())
+        .pipe(gulp.dest('./home/css/'))
+        .pipe( connect.reload() )
+        .pipe(notify({ message: 'home style  task complete' }));
+
+});
+
 gulp.task('html',function(){
     gulp.src('./'+ day +'/*.html')
+        .pipe( connect.reload() )
+});
+
+gulp.task('homeHtml',function(){
+    gulp.src('./*.html')
         .pipe( connect.reload() )
 });
 
@@ -77,13 +96,14 @@ gulp.task('watch', function() {
 
     // 看守.scss 档
     gulp.watch('./'+ day +'/src/scss/*.scss', ['sass']);
-
+    gulp.watch('./home/scss/*.scss', ['home']);
     // 看守所有.js档
     gulp.watch('./'+ day +'/*.js', ['scripts']);
     gulp.watch('./'+ day +'/src/js/*.js', ['html','scripts']);
 
     // 看守所有.html
     gulp.watch('./'+ day +'/*.html',['html','zip']);
+    gulp.watch('./*.html',['homeHtml']);
 
 });
 
