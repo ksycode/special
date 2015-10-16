@@ -10,9 +10,14 @@ $colorbg:#feb5cc;
 
   overflow:hidden;
 }
-
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
 .z-w{
-  width: 1000px;
+  width: 966px;
   margin: 0 auto;
 }
 .activity-main{
@@ -31,6 +36,5 @@ $colorbg:#feb5cc;
 
 @import "head";
 @import "floor";
-@import "my";
 @import "anmi";
 @import "animate";

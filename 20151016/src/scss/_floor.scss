@@ -1,146 +1,80 @@
 .floor-wrap{
-  background-color: #1ae3d3;
-  min-height: 200px;
+  background-color: #ffea00;
+  min-height: 800px;
 }
-.floor-main{
-  padding-top:40px;
-}
-.floor-1,.floor-2,.floor-3,.floor-4{
-  position: relative;
-}
-.floor-1{
 
-  margin-bottom: 20px;
-  .time-flag{
-    height: 138px;
-    background: url(./images/time-flag.png) no-repeat;
+.floor-main{
+  .floor-title{
+    background-repeat: no-repeat;
+    background-position: center center;
   }
-  .register-btn{
-    position: absolute;
-    height: 80px;
-    width: 230px;
-    right: 10px;
-    top: 20px;
-    background: url(./images/register-btn.png) no-repeat;
+  img{
+    padding: 0;
+    margin: 0;
   }
-}
-.floor-2{
-  background: #f0344f;
-  padding-bottom: 38px;
-  margin-bottom: 30px;
-  .z-title{
-    height: 181px;
-    background: #f0344f url(./images/million-title.png) no-repeat;
-    margin-bottom: 40px;
-  }
-  .z-list{
-    position: relative;
-    height: 200px;
-    width: 938px;
-    margin: 0 auto;
-    background: #f0344f url(./images/million-main.png) no-repeat;
-    .z-btn{
-      position: absolute;
-      right: 20px;
-      top: 90px;
-      display: block;
-      height: 55px;
-      width: 180px;
-      background: url(./images/million-btn.png) no-repeat;
+  .z-thumb{
+    overflow: hidden;
+    img{
+      max-width: 100%;
     }
   }
-}
-.floor-3{
-    padding-top: 33px;
-    margin-bottom: 50px;
-  .z-title{
+  .z-desc{
+    background-color: #85543b;
+    color: #FFF;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .z-pro-first{
+    width: 346px;
     position: absolute;
-    left: 50%;
-    top: 0;
-    margin-left: -176px;
-    width: 352px;
-    height: 58px;
-    background:#1ae3d3 url(./images/new-hb-title.png) no-repeat center center;
+    .z-thumb{
+      width: 346px;
+      height: 414px;
+    }
+    .z-desc{
+      height: 90px;
+      font-size: 26px;
+      line-height: 36px;
+      text-indent: 30px;
+      p{
+        padding-top: 5px;
+      }
+    }
   }
-  .z-list{
-    min-height: 80px;
-    border: 4px solid #1CC3B6;
-    border-radius: 8px;
-    padding: 20px;
-    padding-top: 60px;
-  }
-  .z-list-hide{
-    height: 120px;
-    overflow: hidden;
-  }
-  .new-hb-info-u {
-    position: relative;
+  .pro-list-u{
+    width: (204px*3);
     li{
       float: left;
-      width: 50%;
-      padding:10px 0;
-      span{
-        padding-left: 40px;
+      width: 196px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+    }
+    .z-thumb{
+      width: 196px;
+      height: 196px;
+    }
+    .z-desc{
+      height: 51px;
+      font-size: 14px;
+      line-height: 20px;
+      text-indent: 10px;
+      p{
+        padding-top: 5px;
       }
     }
   }
 }
-.btn-hover-sc{
-  transform: scale(.9);
-  transition: transform .5s cubic-bezier(.32,0,.15,1);
-  &:hover{
-    transform: scale(1);
-    transition: transform .2s cubic-bezier(.32,0,.15,1);
-  }
+
+.z-pro-wrap{
+  position: relative;
 }
-.wall-wrap{
-  min-height: 920px;
-  a{
-    display: block;
-  }
-  .wall-btn{
-    position: absolute;
-    width: 220px;
-    height: 55px;
-    left: 50%;
-  }
-  .wall-2,.wall-3,.wall-4{
-    position: absolute;
-  }
-  .wall-1{
-    height: 367px;
-    width: 470px;
-    position: relative;
-    background: url(./images/wall-1.png) no-repeat;
-    .wall-btn{
-      top: 260px;
-      margin-left: -110px;
-      background: url(./images/wall-1-btn.png) no-repeat;
-    }
-  }
-  .wall-2{
-    top: 0;
-    right: 0px;
-    height: 527px;
-    width: 497px;
-    background: url(./images/wall-2.png) no-repeat;
-  }
-  .wall-3{
-    height: 513px;
-    width: 517px;
-    background: url(./images/wall-3.png) no-repeat;
-  }
-  .wall-4{
-    height: 367px;
-    width: 472px;
-    top:506px;
-    right: 0;
-    background: url(./images/wall-4.png) no-repeat;
-    .wall-btn{
-      left: 50%;
-      top: 260px;
-      margin-left: -110px;
-      background: url(./images/wall-4-btn.png) no-repeat;
-    }
+.floor-1{
+  .floor-title{
+    height: 48px;
+    background-image: url(./images/floor-1-title.png);
   }
 }

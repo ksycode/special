@@ -329,8 +329,35 @@
 </body>
 <script charset="utf-8">
   $(function(){
-    $("#z-list-hide").ZScroll({line:2,speed:1000,timer:3000,up:"but_up",down:"but_down"});
+    //$("#z-list-hide").ZScroll({line:2,speed:1000,timer:3000,up:"but_up",down:"but_down"});
+    //line : 每次滚动的行数
+    //speed: 滚动速度，数值越大，速度越慢（毫秒）
+    //timer：滚动的时间间隔（毫秒）
+
+    $(window).scroll(function () {
+           var WH = $(window).height();
+           var WHTop = $(window).scrollTop();
+           var NewInfoTop = $(".floor-3").offset().top;
+
+           if (WHTop >= NewInfoTop - WH / 2) {
+
+               if (ZScrollSOpen) {
+                   ZScrollStar();
+                   ZScrollSOpen = false;
+                   console.log("one");
+               }
+               console.log("已到屏幕中间开始滚动");
+
+           }
+
+       });
+
+       function ZScrollStar() {
+
+           $("#z-list-hide").ZScroll({ line: 2, speed: 1000, timer: 3000, up: "but_up", down: "but_down" });
+       }
   })
+
 
 </script>
 </html>
