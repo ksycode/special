@@ -55,7 +55,7 @@
         },
         FloorAll:function(data,imgHead,id){
 
-            var fistH = '<a class="hvr-float-shadow" href="'+ data[0].站内链接 +'" target="_blank" title="'+ data[0].简短商品名 +'">'+
+            var fistH = '<a class="hvr-float" href="'+ data[0].站内链接 +'" target="_blank" title="'+ data[0].简短商品名 +'">'+
               '<div class="z-thumb">'+
                   '<img src="./images/products/'+imgHead+'1.jpg" alt="">'+
                 '</div>'+
@@ -71,7 +71,7 @@
                     price = data[i].商品价格,
                     imgUrl = './images/products/'+imgHead+(i+1)+'.jpg';
                     url = data[i].站内链接;
-                str += '<li class="hvr-float-shadow">'+
+                str += '<li class="hvr-float">'+
                   '<a href="'+ url +'"  target="_blank" title="'+ name +'" >'+
                     '<div class="z-thumb">'+
                       '<img src="'+ imgUrl +'" alt="">'+

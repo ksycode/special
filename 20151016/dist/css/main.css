@@ -157,18 +157,7 @@
     position: absolute; }
     .floor-main .z-pro-first .z-thumb {
       width: 346px;
-      height: 414px;
-      line-height: 414px;
-      vertical-align: middle;
-      text-align: center;
-      background: #FFF; }
-      .floor-main .z-pro-first .z-thumb img {
-        line-height: 414px;
-        vertical-align: middle;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        top: 109px; }
+      height: 414px; }
     .floor-main .z-pro-first .z-desc {
       height: 90px;
       font-size: 26px;
