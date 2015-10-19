@@ -8,7 +8,11 @@
 
 .floor-main{
   position: relative;
-  padding-top: 700px;
+  padding-top: 510px;
+  a{
+    display: block;
+    cursor: pointer;
+  }
   .floor-title{
     margin-bottom: 26px;
     background-repeat: no-repeat;
@@ -23,6 +27,9 @@
       position: absolute;
       right: 0px;
       bottom: 2px;
+      &:hover{
+        
+      }
     }
   }
   img{
@@ -51,6 +58,18 @@
     .z-thumb{
       width: 346px;
       height: 414px;
+      line-height: 414px;
+      vertical-align: middle;
+      text-align: center;
+      background: #FFF;
+      img{
+        line-height: 414px;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: (414px/2-196px/2);
+      }
     }
     .z-desc{
       height: 90px;
@@ -112,9 +131,10 @@
 }
 .floor-1{
   position: absolute;
-  top: 50px;
-  left: -166px;
-  right: 0;
+  top: -196px;
+  left: 50%;
+  width: 966px;
+  margin-left: -483px;
   .floor-title{
     height: 48px;
     background-image: url(./images/floor-1-title.png);

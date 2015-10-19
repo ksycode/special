@@ -1,8 +1,9 @@
 .z-head{
-  height: 600px;
+  height: (600px-38);
   background: #baf9ff;
   overflow: hidden;
   position: relative;
+  padding-top: 38px;
   .cloud-wrap{
     position: absolute;
     left: 0;
@@ -19,7 +20,7 @@
   .z-head-top{
     height: 150px;
     background: url(./images/z-head-top.png) no-repeat center center;
-    margin-top: 38px;
+    //margin-top: 38px;
   }
   .z-bird,.z-dog,.z-cat{
     position: absolute;
