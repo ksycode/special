@@ -44,6 +44,18 @@ gulp.task('sass', function() {
 });
 
 
+gulp.task('onescss', function() {
+    return gulp.src('./'+ day +'/images/edm/emd.scss')
+        .pipe(sass({ style: 'expanded' }))
+        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(rename('emd.css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('./'+ day +'/images/edm/'))
+        .pipe( connect.reload() )
+        .pipe(notify({ message: 'onescss  task complete' }));
+
+});
+
 gulp.task('home', function() {
     return gulp.src('./home/scss/main.scss')
         .pipe(sass({ style: 'expanded' }))
