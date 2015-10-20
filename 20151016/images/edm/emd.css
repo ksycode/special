@@ -65,6 +65,8 @@ a{
 
 .pro-td img{
   max-width: 100%;
+  width: 125px;
+  height: 125px;
   display: block;
   margin: 0 auto;
 }
